@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="49.358px" height="56.11px" viewBox="0 0 49.358 56.11" enable-background="new 0 0 49.358 56.11" xml:space="preserve">
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="1.23" y="1.073" width="48.128" height="53.938"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	
+		<rect x="2.23" y="2.425" clip-path="url(#SVGID_2_)" fill="none" stroke="#52A246" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="40.128" height="47.719"/>
+	
+		<line clip-path="url(#SVGID_2_)" fill="none" stroke="#52A246" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="8.984" y1="2.425" x2="8.984" y2="49.952"/>
+</g>
+<rect x="15.205" y="10.161" fill="none" stroke="#52A246" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="21.683" height="12.114"/>
+<line fill="none" stroke="#52A246" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="18.546" y1="14.267" x2="33.547" y2="14.267"/>
+<line fill="none" stroke="#52A246" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="18.546" y1="18.167" x2="33.547" y2="18.167"/>
+<g>
+	<defs>
+		<rect id="SVGID_3_" x="1.23" y="1.073" width="48.128" height="53.938"/>
+	</defs>
+	<clipPath id="SVGID_4_">
+		<use xlink:href="#SVGID_3_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_4_)" fill="#FFFFFF" d="M38.609,54.011c5.385,0,9.75-4.072,9.75-9.094s-4.365-9.093-9.75-9.093
+		s-9.75,4.071-9.75,9.093S33.225,54.011,38.609,54.011"/>
+	
+		<ellipse clip-path="url(#SVGID_4_)" fill="none" stroke="#52A246" stroke-width="2" cx="38.609" cy="44.918" rx="9.75" ry="9.093"/>
+</g>
+<line fill="none" stroke="#52A246" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="34.859" y1="44.886" x2="42.359" y2="44.886"/>
+<line fill="none" stroke="#52A246" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="38.609" y1="41.449" x2="38.609" y2="48.385"/>
+</svg>

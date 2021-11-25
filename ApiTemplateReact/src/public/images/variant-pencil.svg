@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>pencil</title>
+    <g id="New-item-upload-flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Item-upload-ALL--Copy" transform="translate(-665.000000, -3248.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Group-2" transform="translate(255.000000, 3117.000000)">
+                <path d="M420.018,135.266 L421.082,134.202 C421.194,134.09 421.25,133.952333 421.25,133.789 C421.25,133.625667 421.194,133.488 421.082,133.376 L421.082,133.376 L419.724,132.018 C419.612,131.906 419.474333,131.85 419.311,131.85 C419.147667,131.85 419.01,131.906 418.898,132.018 L418.898,132.018 L417.834,133.082 L420.018,135.266 Z M412.934,142.35 L419.388,135.896 L417.204,133.712 L410.75,140.166 L410.75,142.35 L412.934,142.35 Z" id="pencil"></path>
+            </g>
+        </g>
+    </g>
+</svg>

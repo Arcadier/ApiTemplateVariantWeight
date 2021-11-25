@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="49px" height="54px" viewBox="0 0 49 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>add_address</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0.23" y="0.073" width="48.128" height="53.938"></rect>
+        <rect id="path-3" x="0.23" y="0.073" width="48.128" height="53.938"></rect>
+        <rect id="path-5" x="0.23" y="0.073" width="48.128" height="53.938"></rect>
+        <rect id="path-7" x="0.23" y="0.073" width="48.128" height="53.938"></rect>
+    </defs>
+    <g id="Package" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="add_address">
+            <g id="Group">
+                <g id="Clipped">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="SVGID_1_"></g>
+                    <rect id="Rectangle" stroke="#1E3F4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)" x="1.23" y="1.425" width="40.128" height="47.719"></rect>
+                </g>
+                <g id="Clipped">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <g id="SVGID_1_"></g>
+                    <path d="M7.984,1.425 L7.984,48.952" id="Path" stroke="#1E3F4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-4)"></path>
+                </g>
+            </g>
+            <rect id="Rectangle" stroke="#1E3F4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="14.205" y="9.161" width="21.683" height="12.114"></rect>
+            <path d="M17.546,13.267 L32.547,13.267" id="Path" stroke="#1E3F4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M17.546,17.167 L32.547,17.167" id="Path" stroke="#1E3F4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <g id="Group">
+                <g id="Clipped">
+                    <mask id="mask-6" fill="white">
+                        <use xlink:href="#path-5"></use>
+                    </mask>
+                    <g id="SVGID_3_"></g>
+                    <path d="M37.609,53.011 C42.994,53.011 47.359,48.939 47.359,43.917 C47.359,38.895 42.994,34.824 37.609,34.824 C32.224,34.824 27.859,38.895 27.859,43.917 C27.859,48.939 32.225,53.011 37.609,53.011" id="Path" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-6)"></path>
+                </g>
+                <g id="Clipped">
+                    <mask id="mask-8" fill="white">
+                        <use xlink:href="#path-7"></use>
+                    </mask>
+                    <g id="SVGID_3_"></g>
+                    <ellipse id="Oval" stroke="#1E3F4D" stroke-width="2" mask="url(#mask-8)" cx="37.609" cy="43.918" rx="9.75" ry="9.093"></ellipse>
+                </g>
+            </g>
+            <path d="M33.859,43.886 L41.359,43.886" id="Path" stroke="#1E3F4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M37.609,40.449 L37.609,47.385" id="Path" stroke="#1E3F4D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>

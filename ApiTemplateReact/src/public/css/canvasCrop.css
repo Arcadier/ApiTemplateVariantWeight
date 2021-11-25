@@ -1,0 +1,249 @@
+﻿
+.imageBox > canvas {
+    z-index: 10;
+}
+
+.modal-content {
+    height: auto;
+    width: 100%;
+    padding-top: 100%;
+}
+
+.action {
+    width: 400px;
+    height: 30px;
+    margin: 10px 0;
+}
+
+.uploded-items .add-item-box > img {
+    width: 100%;
+    border: 1px solid #b3b3b3;
+}
+
+#images #item-upload-area .uploded-items {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.cropped {
+    width: 200px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.upload-wapper {
+    position: absolute;
+    top: 0;
+    background-color: transparent;
+    text-align: center;
+    border: none;
+    display: inline-block;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+    .upload-wapper > .upload-wrapper-container > span {
+        position: absolute;
+        width: 100%;
+        top: Calc(50% - 35px);
+        font-size: 35px;
+        color: #bcbcbb;
+        display: block;
+    }
+
+.upload-wrapper-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.imageBox {
+    position: absolute;
+    height: Calc(100% - 38px);
+    width: Calc(100% - 38px);
+    margin: 19px auto;
+    border: 1px solid #aaa;
+    background: #fff;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    cursor: move;
+    box-shadow: none;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.uploded-items .add-item-box > img {
+    width: 100%;
+}
+
+.upload-wapper #upload-file {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer;
+}
+
+.imageBox .thumbBox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.imageBox .spinner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    line-height: 400px;
+    background: rgba(0,0,0,0.7);
+}
+
+.Btnsty_peyton {
+    float: right;
+    width: 66px;
+    display: inline-block;
+    margin-bottom: 10px;
+    height: 57px;
+    line-height: 57px;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin: 0px 2px;
+    background-color: #f38e81;
+    border-radius: 3px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px #B0B0B0;
+    border: 0px #fff solid;
+}
+
+.tools {
+    position: absolute;
+    padding: 0;
+    width: Calc(100% - 40px);
+    text-align: right;
+    height: Calc(100% - 46px);
+    left: 20px;
+    top: 26px;
+}
+
+    .tools .tools-icons {
+        position: absolute;
+        right: 15px;
+        z-index: 11;
+    }
+
+.imageBox > canvas.remove-index {
+    z-index: 1;
+}
+
+.cr-slider:focus {
+    outline: none;
+}
+
+.cr-slider {
+    -webkit-appearance: range;
+    max-width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    z-index: 11;
+}
+
+    .cr-slider::-webkit-slider-runnable-track {
+        width: 100%;
+        width: 100%;
+        height: 3px;
+        background: rgba(0, 0, 0, 0.5);
+        border: 0;
+        border-radius: 3px;
+    }
+
+    .cr-slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        border: none;
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        background: #ddd;
+        margin-top: -6px;
+    }
+
+    .cr-slider:focus {
+        outline: none;
+    }
+/*选择文件上传*/
+
+.new-contentarea {
+    width: 165px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    float: left;
+}
+
+    .new-contentarea label {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+    .new-contentarea input[type=file] {
+        width: 188px;
+        height: 60px;
+        background: #333;
+        margin: 0 auto;
+        position: absolute;
+        right: 50%;
+        margin-right: -94px;
+        top: 0;
+        right /*\**/: 0px\9;
+        margin-right /*\**/: 0px\9;
+        width /*\**/: 10px\9;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        z-index: 2;
+    }
+
+.cropped > img {
+    width: 100%;
+}
+
+a.upload-img {
+    width: 165px;
+    display: inline-block;
+    margin-bottom: 10px;
+    height: 57px;
+    line-height: 57px;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #f38e81;
+    border-radius: 3px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0px #fff solid;
+    box-shadow: 0px 0px 5px #B0B0B0;
+}
+
+.modal-cropper {
+    padding: 20px;
+}
+
+a.upload-img:hover {
+    background-color: #ec7e70;
+}
+
+.tc {
+    text-align: center;
+}

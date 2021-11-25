@@ -1,0 +1,38 @@
+Approval Custom Tables
+
+Table Name: Departments
+
+Col Name - Col Type
+
+Id - Guid
+Name - String
+UserID - string
+WorkflowCount - Integer
+WorkflowID - String 
+
+
+Table Name: Settings
+
+Col Name - Col Type
+
+Id - Guid
+Enabled - Integer
+UserID - String
+
+
+Table Name: Workflows
+
+Col Name - Col Type 
+
+Id - Guid
+Active - Integer
+Reason - String
+UserID - String
+Values - String
+WorkflowCount - Integer
+
+Table name: Approvals (Custom Table)
+Column:
+[RequisitionID] [string] NOT NULL
+[Status] [string] NOT NULL
+[UserID] [string] NOT NULL

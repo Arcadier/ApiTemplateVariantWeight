@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "ApiTemplateReact", "ApiTemplateReact\ApiTemplateReact.njsproj", "{1CEA7953-A34D-46BB-8C7E-231690659AB0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1CEA7953-A34D-46BB-8C7E-231690659AB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CEA7953-A34D-46BB-8C7E-231690659AB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CEA7953-A34D-46BB-8C7E-231690659AB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CEA7953-A34D-46BB-8C7E-231690659AB0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B941C23E-768C-4998-9A66-9B7F4E78C80A}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,1951 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>ApiTemplateReact</Name>
+    <RootNamespace>BespokeReact</RootNamespace>
+    <SaveNodeJsSettingsInProjectFile>False</SaveNodeJsSettingsInProjectFile>
+    <LastActiveSolutionConfig>Debug|Any CPU</LastActiveSolutionConfig>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>1cea7953-a34d-46bb-8c7e-231690659ab0</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>dist\server.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>True</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="sdk\apiClient.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sdk\client.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sdk\error.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sdk\resources\activitylog.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sdk\resources\carts.js" />
+    <Compile Include="sdk\resources\categories.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sdk\resources\comparisons.js" />
+    <Compile Include="sdk\resources\contentPages.js" />
+    <Compile Include="sdk\resources\customfields.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sdk\resources\customTables.js" />
+    <Compile Include="sdk\resources\emails.js" />
+    <Compile Include="sdk\resources\files.js" />
+    <Compile Include="sdk\resources\items.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sdk\resources\marketplaces.js" />
+    <Compile Include="sdk\resources\media.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sdk\resources\orders.js" />
+    <Compile Include="sdk\resources\panels.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sdk\resources\purchases.js" />
+    <Compile Include="sdk\resources\shippingMethods.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sdk\resources\transactions.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sdk\resources\users.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sdk\utils.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\passport.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\public\js\bootstrap-datetimepicker.min.js" />
+    <Compile Include="src\public\js\ck-editor.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\public\js\common.js" />
+    <Compile Include="src\public\js\daterangepicker.js" />
+    <Compile Include="src\public\js\enum-core.js" />
+    <Compile Include="src\public\js\item-pagination.js" />
+    <Compile Include="src\public\js\jquery.canvasCrop.js" />
+    <Compile Include="src\public\js\jquery.ddslick.js" />
+    <Compile Include="src\public\js\jquery.shorten.1.0.js" />
+    <Compile Include="src\public\js\codex-fly.js" />
+    <Compile Include="src\public\js\lightbox.min.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\public\js\moment.min.js" />
+    <Compile Include="src\public\js\sol.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\public\js\static\activity.js" />
+    <Compile Include="src\public\js\static\country.js" />
+    <Compile Include="src\public\js\static\edm.js" />
+    <Compile Include="src\public\js\static\gateways.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\public\js\static\order-diary.js" />
+    <Compile Include="src\public\js\static\flag.js" />
+    <Compile Include="src\public\js\static\policy.js" />
+    <Compile Include="src\public\js\static\toaststr.js" />
+    <Compile Include="src\public\static.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\redux\actions.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\redux\actionTypes.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\redux\activityLogAction.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\redux\reducers\approval.js" />
+    <Compile Include="src\redux\cartActions.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\redux\checkoutReviewAction.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\redux\comparisonActions.js" />
+    <Compile Include="src\redux\paymentAcceptanceActions.js" />
+    <Compile Include="src\redux\policyActions.js" />
+    <Compile Include="src\redux\reducers\checkout.js" />
+    <Compile Include="src\redux\reducers\content-pages.js" />
+    <Compile Include="src\redux\shippingActions.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\redux\inboxAction.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\redux\approvalActions.js" />
+    <Compile Include="src\redux\addressActions.jsx" />
+    <Compile Include="src\redux\itemDetailsActions.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\redux\marketplaceActions.js" />
+    <Compile Include="src\redux\merchantItemActions.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\redux\orderActions.js" />
+    <Compile Include="src\redux\purchaseActions.js" />
+    <Compile Include="src\redux\reducers\activitylog.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\redux\reducers\carts.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\redux\reducers\categories.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\redux\reducers\comparisons.js" />
+    <Compile Include="src\redux\reducers\dashboard.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\redux\reducers\delivery-settings.js" />
+    <Compile Include="src\redux\reducers\items.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\redux\reducers\inbox.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\redux\reducers\marketplaces.js" />
+    <Compile Include="src\redux\reducers\uploadEditItem.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\redux\reducers\order-diary.js" />
+    <Compile Include="src\redux\orderDiaryActions.js" />
+    <Compile Include="src\redux\reducers\orders.js" />
+    <Compile Include="src\redux\reducers\purchases.js" />
+    <Compile Include="src\redux\reducers\requisitions.js" />
+    <Compile Include="src\redux\reducers\settings.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\redux\reducers\users.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\redux\storefrontActions.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\redux\subAccountActions.js" />
+    <Compile Include="src\redux\transactionActions.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\routes\approval.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\redux\userActions.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\routes\cart.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\routes\category.js" />
+    <Compile Include="src\routes\checkout.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\routes\comparison.js" />
+    <Compile Include="src\routes\policy.js" />
+    <Compile Include="src\routes\deliverysettings.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\routes\invoice.js" />
+    <Compile Include="src\routes\items.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\routes\login.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\routes\marketplace.js" />
+    <Compile Include="src\routes\merchants\dashboard.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\routes\merchants\items.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\routes\merchants\order.js" />
+    <Compile Include="src\routes\merchants\upload-edit.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\routes\order-diary.js" />
+    <Compile Include="src\routes\panel.js" />
+    <Compile Include="src\routes\storefront.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\routes\purchase.js" />
+    <Compile Include="src\routes\merchants\settings.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\routes\sub-account.js" />
+    <Compile Include="src\routes\requisition.js" />
+    <Compile Include="src\scripts\activity-log\index.js" />
+    <Compile Include="src\scripts\approval\index.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\scripts\cart\index.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\scripts\checkout\delivery.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\scripts\checkout\payment.js" />
+    <Compile Include="src\scripts\checkout\review.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\scripts\checkout\checkout-complete.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\scripts\comparison\list.js" />
+    <Compile Include="src\scripts\delivery\settings.js" />
+    <Compile Include="src\scripts\inbox\index.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\scripts\item\index.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\scripts\merchant\upload-edit.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\scripts\login\landing.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\scripts\merchant\dashboard.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\scripts\merchant\item-list.js" />
+    <Compile Include="src\scripts\merchant\order.js" />
+    <Compile Include="src\scripts\policy\index.js" />
+    <Compile Include="src\scripts\purchase\index.js" />
+    <Compile Include="src\scripts\merchant\settings.js" />
+    <Compile Include="src\scripts\shared\footer.js" />
+    <Compile Include="src\scripts\shared\header.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\scripts\shared\sidebar.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\scripts\shared\request-api.js" />
+    <Compile Include="src\scripts\storefront\index.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\scripts\user\settings.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\scripts\requisition\index.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\server.js" />
+    <Compile Include="src\routes\index.js" />
+    <Compile Include="src\routes\users.js" />
+    <Compile Include="src\redux\store.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\approval\settings\index.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\approval\department\index.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\approval\department\add-edit.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\approval\department\delete-department-modal.jsx" />
+    <Compile Include="src\views\approval\department\filter.jsx" />
+    <Compile Include="src\views\approval\department\heading.jsx" />
+    <Compile Include="src\views\approval\department\list.jsx" />
+    <Compile Include="src\views\approval\workflow\index.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\approval\workflow\add.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\approval\workflow\delete-workflow-modal.jsx" />
+    <Compile Include="src\views\approval\workflow\filter.jsx" />
+    <Compile Include="src\views\approval\workflow\heading.jsx" />
+    <Compile Include="src\views\approval\workflow\list.jsx" />
+    <Compile Include="src\views\approval\workflow\workflow-view.jsx" />
+    <Compile Include="src\views\cart\main.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\cart\order-summary.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\chat\inbox\details.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\chat\inbox\main.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\chat\inbox\search.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\checkout\delivery\main.jsx" />
+    <Compile Include="src\views\checkout\payment\index.jsx" />
+    <Compile Include="src\views\checkout\review\main.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\checkout\transaction-complete\transaction_complete.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\delivery\add-edit\delivery-option.jsx" />
+    <Compile Include="src\views\delivery\add-edit\index.jsx" />
+    <Compile Include="src\views\delivery\settings\delivery-option-settings.jsx" />
+    <Compile Include="src\views\delivery\settings\index.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\checkout\transaction-complete\transaction_complete.jsx" />
+    <Compile Include="src\views\delivery\settings\modal.jsx" />
+    <Compile Include="src\views\delivery\settings\pickup-option.jsx" />
+    <Compile Include="src\views\extensions\bespoke\chat\comparison.jsx" />
+    <Compile Include="src\views\extensions\bespoke\chat\offer.jsx" />
+    <Compile Include="src\views\extensions\bespoke\checkout\delivery\address-box.jsx" />
+    <Compile Include="src\views\extensions\bespoke\checkout\delivery\main.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\extensions\bespoke\checkout\payment\index.jsx" />
+    <Compile Include="src\views\extensions\bespoke\checkout\review\main.jsx" />
+    <Compile Include="src\views\extensions\bespoke\checkout\review\review.jsx" />
+    <Compile Include="src\views\extensions\bespoke\checkout\shared\order-summary.jsx" />
+    <Compile Include="src\views\extensions\bespoke\checkout\shared\process-bar.jsx" />
+    <Compile Include="src\views\extensions\bespoke\comparison\comparison-list\index.jsx" />
+    <Compile Include="src\views\extensions\bespoke\comparison\comparison-list\list.jsx" />
+    <Compile Include="src\views\extensions\bespoke\comparison\comparison-list\modal-delete.jsx" />
+    <Compile Include="src\views\extensions\bespoke\comparison\comparison-snapshot\detail-list.jsx" />
+    <Compile Include="src\views\extensions\bespoke\comparison\comparison-snapshot\template.jsx" />
+    <Compile Include="src\views\extensions\bespoke\comparison\comparison-widget\index.jsx" />
+    <Compile Include="src\views\extensions\bespoke\comparison\comparison-widget\modal-delete.jsx" />
+    <Compile Include="src\views\extensions\bespoke\item\reviews.jsx" />
+    <Compile Include="src\views\extensions\bespoke\layouts\extra-menu.jsx" />
+    <Compile Include="src\views\extensions\bespoke\layouts\language-menu.jsx" />
+    <Compile Include="src\views\extensions\bespoke\layouts\seller-menu.jsx" />
+    <Compile Include="src\views\extensions\bespoke\login\buyer-sign-up.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\extensions\bespoke\login\forgot-password.jsx" />
+    <Compile Include="src\views\extensions\bespoke\login\non-private-login.jsx" />
+    <Compile Include="src\views\extensions\bespoke\login\non-private-sign-up.jsx" />
+    <Compile Include="src\views\extensions\bespoke\login\register-interest.jsx" />
+    <Compile Include="src\views\extensions\bespoke\login\change-password.jsx" />
+    <Compile Include="src\views\extensions\bespoke\login\seller-sign-up.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\extensions\bespoke\merchant\item\upload-edit\index.jsx" />
+    <Compile Include="src\views\extensions\bespoke\merchant\item\upload-edit\modal-edit-variant.jsx" />
+    <Compile Include="src\views\extensions\bespoke\merchant\item\upload-edit\pricing-stock.jsx" />
+    <Compile Include="src\views\extensions\bespoke\merchant\item\upload-edit\tab-list.jsx" />
+    <Compile Include="src\views\extensions\bespoke\merchant\layouts\extra-menu.jsx" />
+    <Compile Include="src\views\extensions\bespoke\merchant\layouts\header-bottom.jsx" />
+    <Compile Include="src\views\extensions\bespoke\merchant\layouts\header-menu.jsx" />
+    <Compile Include="src\views\extensions\bespoke\merchant\layouts\user-menu.jsx" />
+    <Compile Include="src\views\extensions\bespoke\merchant\order\detail\index.jsx" />
+    <Compile Include="src\views\extensions\bespoke\merchant\order\detail\item-detail.jsx" />
+    <Compile Include="src\views\extensions\bespoke\merchant\order\detail\modal-success-change.jsx" />
+    <Compile Include="src\views\extensions\bespoke\merchant\order\detail\shipping-detail.jsx" />
+    <Compile Include="src\views\extensions\bespoke\merchant\order\detail\transaction-detail.jsx" />
+    <Compile Include="src\views\extensions\bespoke\merchant\order\history\index.jsx" />
+    <Compile Include="src\views\extensions\bespoke\merchant\order\history\modal-status-change.jsx" />
+    <Compile Include="src\views\extensions\bespoke\merchant\order\history\modal-success-change.jsx" />
+    <Compile Include="src\views\extensions\bespoke\merchant\order\history\order-action.jsx" />
+    <Compile Include="src\views\extensions\bespoke\merchant\order\history\order-list.jsx" />
+    <Compile Include="src\views\extensions\bespoke\merchant\settings\extra-tab.jsx" />
+    <Compile Include="src\views\extensions\bespoke\merchant\settings\payment.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\extensions\bespoke\order-diary\event-form.jsx" />
+    <Compile Include="src\views\extensions\bespoke\order-diary\index.jsx" />
+    <Compile Include="src\views\extensions\bespoke\order-diary\tab-content.jsx" />
+    <Compile Include="src\views\extensions\bespoke\policy\container.jsx" />
+    <Compile Include="src\views\extensions\bespoke\purchase\detail\main.jsx" />
+    <Compile Include="src\views\extensions\bespoke\purchase\detail\order-list.jsx" />
+    <Compile Include="src\views\extensions\bespoke\purchase\detail\transaction-detail.jsx" />
+    <Compile Include="src\views\extensions\bespoke\purchase\history\purchase-list.jsx" />
+    <Compile Include="src\views\extensions\bespoke\storefront\item-list.jsx" />
+    <Compile Include="src\views\extensions\bespoke\storefront\main.jsx" />
+    <Compile Include="src\views\extensions\bespoke\storefront\merchant-info.jsx" />
+    <Compile Include="src\views\extensions\bespoke\user\settings\settings-button.jsx" />
+    <Compile Include="src\views\extensions\trillia\chat\comparison.jsx" />
+    <Compile Include="src\views\extensions\trillia\chat\offer.jsx" />
+    <Compile Include="src\views\extensions\trillia\checkout\delivery\address-box.jsx" />
+    <Compile Include="src\views\extensions\trillia\checkout\delivery\main.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\extensions\trillia\checkout\payment\index.jsx" />
+    <Compile Include="src\views\extensions\trillia\checkout\review\main.jsx" />
+    <Compile Include="src\views\extensions\trillia\checkout\review\order-summary.jsx" />
+    <Compile Include="src\views\extensions\trillia\checkout\review\review.jsx" />
+    <Compile Include="src\views\extensions\trillia\comparison\comparison-list\index.jsx" />
+    <Compile Include="src\views\extensions\trillia\comparison\comparison-list\list.jsx" />
+    <Compile Include="src\views\extensions\trillia\comparison\comparison-list\modal-delete.jsx" />
+    <Compile Include="src\views\extensions\trillia\comparison\comparison-snapshot\detail-list.jsx" />
+    <Compile Include="src\views\extensions\trillia\comparison\comparison-snapshot\template.jsx" />
+    <Compile Include="src\views\extensions\trillia\comparison\comparison-widget\index.jsx" />
+    <Compile Include="src\views\extensions\trillia\comparison\comparison-widget\modal-delete.jsx" />
+    <Compile Include="src\views\extensions\trillia\layouts\extra-menu.jsx" />
+    <Compile Include="src\views\extensions\trillia\layouts\language-menu.jsx" />
+    <Compile Include="src\views\extensions\trillia\layouts\seller-menu.jsx" />
+    <Compile Include="src\views\extensions\trillia\login\buyer-sign-up.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\extensions\trillia\login\forgot-password.jsx" />
+    <Compile Include="src\views\extensions\trillia\login\change-password.jsx" />
+    <Compile Include="src\views\extensions\trillia\login\seller-sign-up.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\extensions\trillia\merchant\item\upload-edit\availability.jsx" />
+    <Compile Include="src\views\extensions\trillia\merchant\item\upload-edit\index.jsx" />
+    <Compile Include="src\views\extensions\trillia\merchant\item\upload-edit\tab-list.jsx" />
+    <Compile Include="src\views\extensions\trillia\merchant\layouts\extra-menu.jsx" />
+    <Compile Include="src\views\extensions\trillia\merchant\layouts\header-bottom.jsx" />
+    <Compile Include="src\views\extensions\trillia\merchant\layouts\header-menu.jsx" />
+    <Compile Include="src\views\extensions\trillia\merchant\layouts\user-menu.jsx" />
+    <Compile Include="src\views\extensions\trillia\merchant\order\detail\index.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\extensions\trillia\merchant\order\history\index.jsx" />
+    <Compile Include="src\views\extensions\trillia\merchant\order\history\modal-status-change.jsx" />
+    <Compile Include="src\views\extensions\trillia\merchant\order\history\modal-success-change.jsx" />
+    <Compile Include="src\views\extensions\trillia\merchant\order\history\order-action.jsx" />
+    <Compile Include="src\views\extensions\trillia\merchant\order\history\order-list.jsx" />
+    <Compile Include="src\views\extensions\trillia\merchant\settings\extra-tab.jsx" />
+    <Compile Include="src\views\extensions\trillia\merchant\settings\payment.jsx" />
+    <Compile Include="src\views\extensions\trillia\order-diary\event-form.jsx" />
+    <Compile Include="src\views\extensions\trillia\order-diary\index.jsx" />
+    <Compile Include="src\views\extensions\trillia\order-diary\tab-content.jsx" />
+    <Compile Include="src\views\extensions\trillia\policy\container.jsx" />
+    <Compile Include="src\views\extensions\trillia\purchase\detail\main.jsx" />
+    <Compile Include="src\views\extensions\trillia\purchase\detail\order-list.jsx" />
+    <Compile Include="src\views\extensions\trillia\purchase\detail\transaction-detail.jsx" />
+    <Compile Include="src\views\extensions\trillia\purchase\history\purchase-list.jsx" />
+    <Compile Include="src\views\extensions\trillia\storefront\item-list.jsx" />
+    <Compile Include="src\views\extensions\trillia\storefront\main.jsx" />
+    <Compile Include="src\views\extensions\trillia\storefront\merchant-info.jsx" />
+    <Compile Include="src\views\extensions\trillia\user\settings\settings-button.jsx" />
+    <Compile Include="src\views\merchant\dashboard\google-analytics-logic.jsx" />
+    <Compile Include="src\views\merchant\dashboard\graph.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\merchant\dashboard\main.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\merchant\dashboard\topsold.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\merchant\dashboard\topviewed.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\error.html" />
+    <Compile Include="src\views\home\banners.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\home\call-to-action-panels.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\home\categories.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\home\index.jsx" />
+    <Compile Include="src\views\home\items.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\home\title-panels.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\home\value-proposition-panels.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\scripts\home\index.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\item\breadcrumb.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\extensions\trillia\item\bulk-pricing.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\extensions\trillia\item\index.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\extensions\trillia\item\item-info.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\extensions\trillia\item\purchase-order.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\extensions\trillia\item\seller-info.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\extensions\bespoke\item\index.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\extensions\bespoke\item\item-info.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\extensions\bespoke\item\purchase-order.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\extensions\bespoke\item\seller-info.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\item\index.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\item\item-custom-fields.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\layouts\footer.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\layouts\header.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\layouts\sidebar.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\layouts\extra-menu.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\layouts\header-bottom.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\layouts\header-menu.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\layouts\language-menu.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\layouts\user-menu.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\layouts\template.jsx" />
+    <Compile Include="src\views\login\landing.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\merchant\item\list\modal-delete.jsx" />
+    <Compile Include="src\views\merchant\item\upload-edit\image-modal-view.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\extensions\trillia\merchant\item\upload-edit\pricing-modal.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\merchant\order\detail\index.jsx" />
+    <Compile Include="src\views\extensions\trillia\merchant\order\detail\transaction-detail.jsx" />
+    <Compile Include="src\views\merchant\order\history\index.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\extensions\trillia\merchant\item\upload-edit\country.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\merchant\item\upload-edit\categories.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sdk\resources\inbox.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\merchant\item\upload-edit\customfield.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\merchant\item\upload-edit\delivery.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\merchant\item\upload-edit\main.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\extensions\trillia\merchant\item\upload-edit\pricing.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\merchant\order\history\search.jsx" />
+    <Compile Include="src\views\policy\index.jsx" />
+    <Compile Include="src\views\sub-account\list\footer.jsx" />
+    <Compile Include="src\views\common\page-item-count.jsx" />
+    <Compile Include="src\views\sub-account\list\title.jsx" />
+    <Compile Include="src\views\sub-account\list\filter.jsx" />
+    <Compile Include="src\views\sub-account\list\index.jsx" />
+    <Compile Include="src\views\sub-account\list\modal-delete-user.jsx" />
+    <Compile Include="src\views\sub-account\list\modal-invite-user.jsx" />
+    <Compile Include="src\views\purchase\detail\index.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\storefront\main.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\storefront\item-list.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\storefront\merchant-info.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\purchase\history\index.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\purchase\history\purchase-search.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\user\settings\address.jsx" />
+    <Compile Include="src\views\merchant\settings\index.jsx" />
+    <Compile Include="src\views\user\settings\index.jsx" />
+    <Compile Include="src\views\user\settings\payment.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\views\user\settings\profile.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="webpack.config.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include=".babelrc">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include=".env" />
+    <Content Include=".env.sample" />
+    <Content Include="package.json" />
+    <Content Include="approval-tables.txt" />
+    <Content Include="README.md" />
+    <Content Include="sdk\resources\accounts.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="sdk\resources\addresses.js" />
+    <Content Include="sdk\resources\chat.js" />
+    <Content Include="sdk\resources\invoices.js" />
+    <Content Include="sdk\resources\permissionProfiles.js" />
+    <Content Include="sdk\resources\quotations.js" />
+    <Content Include="sdk\resources\payments.js" />
+    <Content Include="sdk\resources\receivingNotes.js" />
+    <Content Include="sdk\resources\requisitions.js" />
+    <Content Include="sdk\resources\userGroups.js" />
+    <Content Include="src\public\css\bootstrap-datetimepicker.min.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\public\css\canvasCrop.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\public\css\common.css" />
+    <Content Include="src\public\css\datepicker.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\public\css\daterangepicker.css" />
+    <Content Include="src\public\css\fa-all.css" />
+    <Content Include="src\public\css\feature.css" />
+    <Content Include="src\public\css\fa-all.css" />
+    <Content Include="src\public\css\groupbuy.css" />
+    <Content Include="src\public\css\jquery-ui.min.css" />
+    <Content Include="src\public\css\jquery.timepicker.css" />
+    <Content Include="src\public\css\lightbox.min.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\public\css\responsive.css" />
+    <Content Include="src\public\css\seller-responsive.css" />
+    <Content Include="src\public\css\seller-style.css" />
+    <Content Include="src\public\css\slider.css" />
+    <Content Include="src\public\css\sol.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\public\css\style.css" />
+    <Content Include="src\public\css\bespoke\custom.css" />
+    <Content Include="src\public\css\switch-btn.css" />
+    <Content Include="src\public\favicon.ico" />
+    <Content Include="src\public\fonts\Aileron-Light-webfont.woff" />
+    <Content Include="src\public\fonts\Aileron-Light-webfont.woff2" />
+    <Content Include="src\public\fonts\fa-brands-400.eot" />
+    <Content Include="src\public\fonts\fa-brands-400.svg" />
+    <Content Include="src\public\fonts\fa-brands-400.ttf" />
+    <Content Include="src\public\fonts\fa-brands-400.woff" />
+    <Content Include="src\public\fonts\fa-brands-400.woff2" />
+    <Content Include="src\public\fonts\fa-regular-400.eot" />
+    <Content Include="src\public\fonts\fa-regular-400.svg" />
+    <Content Include="src\public\fonts\fa-regular-400.ttf" />
+    <Content Include="src\public\fonts\fa-regular-400.woff" />
+    <Content Include="src\public\fonts\fa-regular-400.woff2" />
+    <Content Include="src\public\fonts\fa-solid-900.eot" />
+    <Content Include="src\public\fonts\fa-solid-900.svg" />
+    <Content Include="src\public\fonts\fa-solid-900.ttf" />
+    <Content Include="src\public\fonts\fa-solid-900.woff" />
+    <Content Include="src\public\fonts\fa-solid-900.woff2" />
+    <Content Include="src\public\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="src\public\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="src\public\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="src\public\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="src\public\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="src\public\fonts\fa-solid-900.woff2" />
+    <Content Include="src\public\images\add_address-blue.svg" />
+    <Content Include="src\public\images\add_address.svg" />
+    <Content Include="src\public\images\add_address_black.svg" />
+    <Content Include="src\public\images\angle-down.svg" />
+    <Content Include="src\public\images\angle1.svg" />
+    <Content Include="src\public\images\angle2.svg" />
+    <Content Include="src\public\images\arrow.svg" />
+    <Content Include="src\public\images\back-arrow.svg" />
+    <Content Include="src\public\images\back.svg" />
+    <Content Include="src\public\images\banner.jpg" />
+    <Content Include="src\public\images\browse.svg" />
+    <Content Include="src\public\images\business.svg" />
+    <Content Include="src\public\images\ca1.jpg" />
+    <Content Include="src\public\images\ca2.jpg" />
+    <Content Include="src\public\images\ca3.jpg" />
+    <Content Include="src\public\images\ca4.jpg" />
+    <Content Include="src\public\images\cannot-found.png" />
+    <Content Include="src\public\images\cart_icon.svg" />
+    <Content Include="src\public\images\check.svg" />
+    <Content Include="src\public\images\close.png" />
+    <Content Include="src\public\images\closew_btn.svg" />
+    <Content Include="src\public\images\cloud_icon.png" />
+    <Content Include="src\public\images\cn.svg" />
+    <Content Include="src\public\images\compareslicka.svg" />
+    <Content Include="src\public\images\country_flags\af.svg" />
+    <Content Include="src\public\images\country_flags\ar.svg" />
+    <Content Include="src\public\images\country_flags\az.svg" />
+    <Content Include="src\public\images\country_flags\be.svg" />
+    <Content Include="src\public\images\country_flags\bg.svg" />
+    <Content Include="src\public\images\blank.png" />
+    <Content Include="src\public\images\country_flags\bn.svg" />
+    <Content Include="src\public\images\country_flags\bs.svg" />
+    <Content Include="src\public\images\country_flags\ca.svg" />
+    <Content Include="src\public\images\country_flags\ceb.svg" />
+    <Content Include="src\public\images\country_flags\cn.svg" />
+    <Content Include="src\public\images\country_flags\cs.svg" />
+    <Content Include="src\public\images\country_flags\cy.svg" />
+    <Content Include="src\public\images\country_flags\da.svg" />
+    <Content Include="src\public\images\country_flags\de.svg" />
+    <Content Include="src\public\images\country_flags\el.svg" />
+    <Content Include="src\public\images\country_flags\en.svg" />
+    <Content Include="src\public\images\country_flags\eo.svg" />
+    <Content Include="src\public\images\country_flags\es.svg" />
+    <Content Include="src\public\images\country_flags\et.svg" />
+    <Content Include="src\public\images\country_flags\eu.svg" />
+    <Content Include="src\public\images\country_flags\fa.svg" />
+    <Content Include="src\public\images\country_flags\fi.svg" />
+    <Content Include="src\public\images\country_flags\fr.svg" />
+    <Content Include="src\public\images\country_flags\ga.svg" />
+    <Content Include="src\public\images\country_flags\gb.svg" />
+    <Content Include="src\public\images\country_flags\gl.svg" />
+    <Content Include="src\public\images\country_flags\gu.svg" />
+    <Content Include="src\public\images\country_flags\ha.svg" />
+    <Content Include="src\public\images\country_flags\hi.svg" />
+    <Content Include="src\public\images\country_flags\hmn.svg" />
+    <Content Include="src\public\images\country_flags\hr.svg" />
+    <Content Include="src\public\images\country_flags\ht.svg" />
+    <Content Include="src\public\images\country_flags\hu.svg" />
+    <Content Include="src\public\images\country_flags\hy.svg" />
+    <Content Include="src\public\images\country_flags\id.svg" />
+    <Content Include="src\public\images\country_flags\ig.svg" />
+    <Content Include="src\public\images\country_flags\is.svg" />
+    <Content Include="src\public\images\country_flags\it.svg" />
+    <Content Include="src\public\images\country_flags\iw.svg" />
+    <Content Include="src\public\images\country_flags\ja.svg" />
+    <Content Include="src\public\images\country_flags\jw.svg" />
+    <Content Include="src\public\images\country_flags\ka.svg" />
+    <Content Include="src\public\images\country_flags\kk.svg" />
+    <Content Include="src\public\images\country_flags\km.svg" />
+    <Content Include="src\public\images\country_flags\kn.svg" />
+    <Content Include="src\public\images\country_flags\ko.svg" />
+    <Content Include="src\public\images\country_flags\la.svg" />
+    <Content Include="src\public\images\country_flags\lo.svg" />
+    <Content Include="src\public\images\country_flags\lt.svg" />
+    <Content Include="src\public\images\country_flags\lv.svg" />
+    <Content Include="src\public\images\country_flags\ma.svg" />
+    <Content Include="src\public\images\country_flags\mg.svg" />
+    <Content Include="src\public\images\country_flags\mi.svg" />
+    <Content Include="src\public\images\country_flags\mk.svg" />
+    <Content Include="src\public\images\country_flags\ml.svg" />
+    <Content Include="src\public\images\country_flags\mn.svg" />
+    <Content Include="src\public\images\country_flags\mr.svg" />
+    <Content Include="src\public\images\country_flags\ms.svg" />
+    <Content Include="src\public\images\country_flags\mt.svg" />
+    <Content Include="src\public\images\country_flags\my.svg" />
+    <Content Include="src\public\images\country_flags\ne.svg" />
+    <Content Include="src\public\images\country_flags\nl.svg" />
+    <Content Include="src\public\images\country_flags\no.svg" />
+    <Content Include="src\public\images\country_flags\ny.svg" />
+    <Content Include="src\public\images\country_flags\pl.svg" />
+    <Content Include="src\public\images\country_flags\pt.svg" />
+    <Content Include="src\public\images\country_flags\ro.svg" />
+    <Content Include="src\public\images\country_flags\ru.svg" />
+    <Content Include="src\public\images\country_flags\si.svg" />
+    <Content Include="src\public\images\country_flags\sk.svg" />
+    <Content Include="src\public\images\country_flags\sl.svg" />
+    <Content Include="src\public\images\country_flags\so.svg" />
+    <Content Include="src\public\images\country_flags\sq.svg" />
+    <Content Include="src\public\images\country_flags\sr.svg" />
+    <Content Include="src\public\images\country_flags\st.svg" />
+    <Content Include="src\public\images\country_flags\su.svg" />
+    <Content Include="src\public\images\country_flags\sv.svg" />
+    <Content Include="src\public\images\country_flags\sw.svg" />
+    <Content Include="src\public\images\country_flags\ta.svg" />
+    <Content Include="src\public\images\country_flags\te.svg" />
+    <Content Include="src\public\images\country_flags\tg.svg" />
+    <Content Include="src\public\images\country_flags\th.svg" />
+    <Content Include="src\public\images\country_flags\tl.svg" />
+    <Content Include="src\public\images\country_flags\tr.svg" />
+    <Content Include="src\public\images\country_flags\uk.svg" />
+    <Content Include="src\public\images\country_flags\ur.svg" />
+    <Content Include="src\public\images\country_flags\uz.svg" />
+    <Content Include="src\public\images\country_flags\vi.svg" />
+    <Content Include="src\public\images\country_flags\yi.svg" />
+    <Content Include="src\public\images\country_flags\yo.svg" />
+    <Content Include="src\public\images\country_flags\zh-CN.svg" />
+    <Content Include="src\public\images\country_flags\zh-TW.svg" />
+    <Content Include="src\public\images\country_flags\zh.svg" />
+    <Content Include="src\public\images\country_flags\zu.svg" />
+    <Content Include="src\public\images\default_user.svg" />
+    <Content Include="src\public\images\delete_btn.svg" />
+    <Content Include="src\public\images\delete_button-white.svg" />
+    <Content Include="src\public\images\done.svg" />
+    <Content Include="src\public\images\delete_button.svg" />
+    <Content Include="src\public\images\down_arrow.svg" />
+    <Content Include="src\public\images\drag_rank.svg" />
+    <Content Include="src\public\images\edit_btn.svg" />
+    <Content Include="src\public\images\edit_hover.svg" />
+    <Content Include="src\public\images\email.svg" />
+    <Content Include="src\public\images\emptypage\activity-log-icon.svg" />
+    <Content Include="src\public\images\emptypage\bag-icon.svg" />
+    <Content Include="src\public\images\emptypage\chat-icon.svg" />
+    <Content Include="src\public\images\emptypage\compare-list.svg" />
+    <Content Include="src\public\images\emptypage\delivery-icon.svg" />
+    <Content Include="src\public\images\emptypage\item-icon.svg" />
+    <Content Include="src\public\images\emptypage\key-icon.svg" />
+    <Content Include="src\public\images\emptypage\list-icon.svg" />
+    <Content Include="src\public\images\emptypage\message-icon.svg" />
+    <Content Include="src\public\images\emptypage\order-icon.svg" />
+    <Content Include="src\public\images\emptypage\user-group-empty.svg" />
+    <Content Include="src\public\images\emptypage\user-icon.svg" />
+    <Content Include="src\public\images\fb-id.svg" />
+    <Content Include="src\public\images\fb.svg" />
+    <Content Include="src\public\images\fr.svg" />
+    <Content Include="src\public\images\gateways\omise_logo.svg" />
+    <Content Include="src\public\images\gateways\paypal_icon.svg" />
+    <Content Include="src\public\images\gateways\stripe_logo.svg" />
+    <Content Include="src\public\images\gb.svg" />
+    <Content Include="src\public\images\google_id.svg" />
+    <Content Include="src\public\images\i1.jpg" />
+    <Content Include="src\public\images\i2.jpg" />
+    <Content Include="src\public\images\i3.jpg" />
+    <Content Include="src\public\images\i4.jpg" />
+    <Content Include="src\public\images\icon-cross-black.png" />
+    <Content Include="src\public\images\image_add.svg" />
+    <Content Include="src\public\images\image_add_white.svg" />
+    <Content Include="src\public\images\image_delete.svg" />
+    <Content Include="src\public\images\img-placeholder.png" />
+    <Content Include="src\public\images\Info.svg" />
+    <Content Include="src\public\images\insta.svg" />
+    <Content Include="src\public\images\insulinA.jpg" />
+    <Content Include="src\public\images\item-pr.jpg" />
+    <Content Include="src\public\images\item-slider-2.jpg" />
+    <Content Include="src\public\images\linkedin.svg" />
+    <Content Include="src\public\images\loading.gif" />
+    <Content Include="src\public\images\location.svg" />
+    <Content Include="src\public\images\login-bg.jpg" />
+    <Content Include="src\public\images\mail.svg" />
+    <Content Include="src\public\images\map-pin.svg" />
+    <Content Include="src\public\images\NCD-logo.jpg" />
+    <Content Include="src\public\images\NCD-logo.svg" />
+    <Content Include="src\public\images\next.png" />
+    <Content Include="src\public\images\no_result.svg" />
+    <Content Include="src\public\images\old_review.svg" />
+    <Content Include="src\public\images\paypal_icon.svg" />
+    <Content Include="src\public\images\pdf.svg" />
+    <Content Include="src\public\images\pencil.svg" />
+    <Content Include="src\public\images\prev.png" />
+    <Content Include="src\public\images\print.svg" />
+    <Content Include="src\public\images\r-check.svg" />
+    <Content Include="src\public\images\r-uncheck.svg" />
+    <Content Include="src\public\images\radiobutton_notselected.svg" />
+    <Content Include="src\public\images\radiobutton_selected.svg" />
+    <Content Include="src\public\images\recive-avatar.png" />
+    <Content Include="src\public\images\send-btn-arrow.svg" />
+    <Content Include="src\public\images\slickarrow.svg" />
+    <Content Include="src\public\images\soldout.svg" />
+    <Content Include="src\public\images\star_ratting.svg" />
+    <Content Include="src\public\images\star_ratting_black.svg" />
+    <Content Include="src\public\images\store-thumb.png" />
+    <Content Include="src\public\images\stripe_logo.svg" />
+    <Content Include="src\public\images\telephone.svg" />
+    <Content Include="src\public\images\trillia.svg" />
+    <Content Include="src\public\images\trillia_logo.svg" />
+    <Content Include="src\public\images\trillia_logo_white.svg" />
+    <Content Include="src\public\images\twitter.svg" />
+    <Content Include="src\public\images\un-logo.png" />
+    <Content Include="src\public\images\user-avatar.png" />
+    <Content Include="src\public\images\verify_pay.svg" />
+    <Content Include="src\public\images\view_review_old-hov.svg" />
+    <Content Include="src\public\images\view_review_old.svg" />
+    <Content Include="src\public\images\void_black.svg" />
+    <Content Include="src\public\images\_gb.svg" />
+    <Content Include="src\public\images\refund_off.svg" />
+    <Content Include="src\public\images\refund_on.svg" />
+    <Content Include="src\public\images\void_white.svg" />
+    <Content Include="src\public\images\view_review.svg" />
+    <Content Include="src\public\images\view_review_hover.svg" />
+    <Content Include="src\public\js\bootstrap-tagsinput-new.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales-all.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales-all.min.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\af.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\ar-dz.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\ar-kw.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\ar-ly.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\ar-ma.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\ar-sa.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\ar-tn.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\ar.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\az.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\bg.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\bs.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\ca.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\cs.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\da.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\de.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\el.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\en-au.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\en-gb.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\en-nz.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\es-us.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\es.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\et.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\eu.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\fa.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\fi.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\fr-ca.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\fr-ch.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\fr.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\gl.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\he.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\hi.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\hr.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\hu.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\id.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\is.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\it.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\ja.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\ka.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\kk.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\ko.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\lb.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\lt.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\lv.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\mk.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\ms.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\nb.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\ne.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\nl.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\nn.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\pl.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\pt-br.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\pt.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\ro.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\ru.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\sk.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\sl.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\sq.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\sr-cyrl.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\sr.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\sv.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\th.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\tr.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\ug.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\uk.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\uz.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\vi.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\zh-cn.js" />
+    <Content Include="src\public\js\fullcalendar-v5\locales\zh-tw.js" />
+    <Content Include="src\public\js\fullcalendar-v5\main.css" />
+    <Content Include="src\public\js\fullcalendar-v5\main.js" />
+    <Content Include="src\public\js\fullcalendar-v5\main.min.css" />
+    <Content Include="src\public\js\fullcalendar-v5\main.min.js" />
+    <Content Include="src\public\js\jquery-ui.min.js" />
+    <Content Include="src\public\js\jquery-ui.sortable.min.js" />
+    <Content Include="src\public\js\jquery.timepicker.min.js" />
+    <Content Include="src\public\js\page-activity.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\public\js\rating.js" />
+    <Content Include="src\public\js\static\custom-field.js" />
+    <Content Include="src\redux\accountAction.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\redux\accountPermissionActions.js" />
+    <Content Include="src\redux\approvalActions.js" />
+    <Content Include="src\redux\categoryActions.js" />
+    <Content Include="src\redux\invoiceActions.js" />
+    <Content Include="src\redux\quotationActions.js" />
+    <Content Include="src\redux\chatActions.js" />
+    <Content Include="src\redux\paymentTermActions.js" />
+    <Content Include="src\redux\recevingNoteActions.js" />
+    <Content Include="src\redux\reducers\account-permissions.js" />
+    <Content Include="src\redux\reducers\chat.js" />
+    <Content Include="src\redux\reducers\invoice.js" />
+    <Content Include="src\redux\reducers\quotations.js" />
+    <Content Include="src\redux\reducers\receiving-notes.js" />
+    <Content Include="src\redux\reducers\requisitions.js" />
+    <Content Include="src\redux\reducers\search.js" />
+    <Content Include="src\redux\reducers\user-groups.js" />
+    <Content Include="src\redux\requisitionActions.js" />
+    <Content Include="src\redux\searchActions.js" />
+    <Content Include="src\redux\panelAction.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\redux\reducers\empty.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\redux\reducers\panels.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\redux\userGroupActions.js" />
+    <Content Include="src\routes\account-permissions.js" />
+    <Content Include="src\routes\activity-log.js" />
+    <Content Include="src\routes\merchants\invoice.js" />
+    <Content Include="src\routes\payment-gateway.js" />
+    <Content Include="src\routes\quotation.js" />
+    <Content Include="src\routes\receiving-note.js" />
+    <Content Include="src\routes\requisition.js" />
+    <Content Include="src\routes\main-routes.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\routes\merchants\index.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\routes\merchants\sub-routes.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\routes\chat.js" />
+    <Content Include="src\routes\search.js" />
+    <Content Include="src\routes\user-groups.js" />
+    <Content Include="src\scripts\account-permission\index.jsx" />
+    <Content Include="src\scripts\chat\index.js" />
+    <Content Include="src\scripts\checkout\one-page-checkout.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\scripts\comparison\detail.js" />
+    <Content Include="src\scripts\delivery\add-edit.js" />
+    <Content Include="src\scripts\approval\index.js" />
+    <Content Include="src\scripts\home\login.js" />
+    <Content Include="src\scripts\invoice\index.js" />
+    <Content Include="src\scripts\payment-gateway\index.js" />
+    <Content Include="src\scripts\quotation\index.js" />
+    <Content Include="src\scripts\receiving-note\index.js" />
+    <Content Include="src\scripts\requisition\index.js" />
+    <Content Include="src\scripts\search\index.js" />
+    <Content Include="src\scripts\shared\authenticated.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\scripts\shared\authorized-merchant.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\scripts\shared\authorized-user.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\scripts\shared\onboarded-merchant.js" />
+    <Content Include="src\scripts\shared\unauthorized-access.js" />
+    <Content Include="src\scripts\shared\user-permissions.js" />
+    <Content Include="src\scripts\sub-account\index.js" />
+    <Content Include="src\scripts\user-group\index.jsx" />
+    <Content Include="src\views\account-permission\add-edit\form.jsx" />
+    <Content Include="src\views\account-permission\add-edit\index.jsx" />
+    <Content Include="src\views\account-permission\add-edit\permission-table.jsx" />
+    <Content Include="src\views\account-permission\add-edit\title.jsx" />
+    <Content Include="src\views\account-permission\list\filter.jsx" />
+    <Content Include="src\views\account-permission\list\index.jsx" />
+    <Content Include="src\views\account-permission\list\list.jsx" />
+    <Content Include="src\views\account-permission\list\title.jsx" />
+    <Content Include="src\views\chat\index.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\chat\item-info.jsx" />
+    <Content Include="src\views\chat\quotation-actions.jsx" />
+    <Content Include="src\views\common\permission-tooltip.jsx" />
+    <Content Include="src\views\common\unauthorized-access-with-sidebar.jsx" />
+    <Content Include="src\views\common\unauthorized-access.jsx" />
+    <Content Include="src\views\comparison\comparison-detail\breadcrumb.jsx" />
+    <Content Include="src\views\comparison\comparison-detail\detail.jsx" />
+    <Content Include="src\views\comparison\comparison-detail\index.jsx" />
+    <Content Include="src\views\comparison\comparison-detail\list.jsx" />
+    <Content Include="src\views\comparison\comparison-detail\modal.jsx" />
+    <Content Include="src\views\comparison\comparison-list\index.jsx" />
+    <Content Include="src\views\comparison\comparison-list\list.jsx" />
+    <Content Include="src\views\comparison\comparison-list\modal-add-edit.jsx" />
+    <Content Include="src\views\comparison\comparison-list\modal-delete.jsx" />
+    <Content Include="src\views\comparison\comparison-snapshot\detail-list.jsx" />
+    <Content Include="src\views\comparison\comparison-snapshot\template.jsx" />
+    <Content Include="src\views\comparison\comparison-widget\index.jsx" />
+    <Content Include="src\views\comparison\comparison-widget\modal-add-edit.jsx" />
+    <Content Include="src\views\comparison\comparison-widget\modal-delete.jsx" />
+    <Content Include="src\views\chat\quotation\index.jsx" />
+    <Content Include="src\views\chat\quotation\price.jsx" />
+    <Content Include="src\views\extensions\bespoke\chat\item-info.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\chat\messages.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\chat\user-info.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\activity-log\index.jsx" />
+    <Content Include="src\views\activity-log\login-details.jsx" />
+    <Content Include="src\views\activity-log\item-details.jsx" />
+    <Content Include="src\views\activity-log\page-details.jsx" />
+    <Content Include="src\views\approval\settings\index.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\approval\department\index.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\approval\department\add-edit.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\approval\department\delete-department-modal.jsx" />
+    <Content Include="src\views\approval\department\heading.jsx" />
+    <Content Include="src\views\approval\department\filter.jsx" />
+    <Content Include="src\views\approval\department\list.jsx" />
+    <Content Include="src\views\approval\workflow\index.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\approval\workflow\add.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\approval\workflow\delete-workflow-modal.jsx" />
+    <Content Include="src\views\approval\workflow\filter.jsx" />
+    <Content Include="src\views\approval\workflow\heading.jsx" />
+    <Content Include="src\views\approval\workflow\list.jsx" />
+    <Content Include="src\views\approval\workflow\workflow-view.jsx" />
+    <Content Include="src\views\common\pagination.jsx" />
+    <Content Include="src\views\error.jsx" />
+    <Content Include="src\views\extensions\bespoke\chat\item-info.jsx" />
+    <Content Include="src\views\extensions\bespoke\chat\offer-actions.jsx" />
+    <Content Include="src\views\extensions\bespoke\comparison\comparison-detail\breadcrumb.jsx" />
+    <Content Include="src\views\extensions\bespoke\comparison\comparison-detail\modal.jsx" />
+    <Content Include="src\views\extensions\bespoke\comparison\comparison-detail\detail.jsx" />
+    <Content Include="src\views\extensions\bespoke\comparison\comparison-detail\list.jsx" />
+    <Content Include="src\views\extensions\bespoke\comparison\comparison-detail\index.jsx" />
+    <Content Include="src\views\extensions\bespoke\comparison\comparison-list\modal-add-edit.jsx" />
+    <Content Include="src\views\extensions\bespoke\comparison\comparison-widget\modal-add-edit.jsx" />
+    <Content Include="src\views\extensions\bespoke\layouts\header-menu.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\extensions\bespoke\layouts\user-menu.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\extensions\bespoke\login\buyer-login.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\extensions\bespoke\login\landing.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\extensions\bespoke\login\register-interest.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\extensions\bespoke\login\reset-password.jsx" />
+    <Content Include="src\views\extensions\bespoke\login\seller-login.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\extensions\bespoke\merchant\item\item-list.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\extensions\bespoke\search\item-view.jsx" />
+    <Content Include="src\views\extensions\bespoke\search\main.jsx" />
+    <Content Include="src\views\extensions\bespoke\search\sort-view-options.jsx" />
+    <Content Include="src\views\extensions\trillia\search\empty-result.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2b\invoice\add-edit\billing-address.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2b\invoice\add-edit\invoice-detail.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2b\invoice\add-edit\order-total.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2b\invoice\add-edit\requisition-detail.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2b\invoice\add-edit\order-items.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2b\invoice\add-edit\shipping-address.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2b\invoice\add-edit\seller-address.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2b\invoice\add-edit\index.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2b\layouts\sidebar-nav.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\checkout_flow_type\b2b\checkout-button\multiple_merchant\index.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\checkout_flow_type\b2b\checkout-button\single_merchant\index.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\checkout_flow_type\b2b\one-page-checkout\country_level\main.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\checkout_flow_type\b2b\checkout-complete\index.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2b\one-page-checkout\variants_level\main.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\checkout_flow_type\b2b\one-page-checkout\shared\create-requisition.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\checkout_flow_type\b2b\one-page-checkout\shared\index.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\checkout_flow_type\b2b\one-page-checkout\shared\details.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\checkout_flow_type\b2b\one-page-checkout\shared\order-total.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\checkout_flow_type\b2b\one-page-checkout\shared\review.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\checkout_flow_type\b2b\purchase_order\detail\shipping_payment_detail.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2b\purchase_order\detail\table-items.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2b\purchase_order\detail\table.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2b\purchase_order\detail\transaction_summary.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2b\purchase_order\merchant\order_history_detail\country_level\headeritem.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2b\purchase_order\merchant\order_history_detail\country_level\table-items.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2b\purchase_order\merchant\order_history_detail\country_level\transaction_summary.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2b\purchase_order\merchant\order_history_detail\order-diary\event-form.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2b\purchase_order\merchant\order_history_detail\order-diary\index-with-border.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2b\purchase_order\merchant\order_history_detail\order-diary\index.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2b\purchase_order\merchant\order_history_detail\order-diary\tab-content.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2b\purchase_order\merchant\order_history_detail\service_level\headeritem.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2b\purchase_order\merchant\order_history_detail\service_level\table-items.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2b\purchase_order\merchant\order_history_detail\service_level\transaction_summary.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2b\purchase_order\merchant\order_history_detail\variants_level\headeritem.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2b\purchase_order\merchant\order_history_detail\variants_level\table-items.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2b\purchase_order\merchant\order_history_detail\variants_level\transaction_summary.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2b\purchase_order\merchant\shipping_payment_detail.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\checkout_flow_type\b2b\purchase_order\merchant\table-items.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2b\purchase_order\merchant\transaction_summary.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2b\purchase_order\order-diary\event-form.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2b\purchase_order\order-diary\index.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2b\purchase_order\order-diary\tab-content.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2b\purchase_order\merchant\order_history_list\index.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2b\purchase_order\purchase_order_list\index.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\checkout-button\multiple_merchant\index.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\checkout_flow_type\b2c\checkout-button\single_merchant\country_level\index.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\checkout-button\single_merchant\index.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\checkout_flow_type\b2c\checkout-button\single_merchant\service_level\index.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\checkout-button\single_merchant\variants_level\index.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\invoice\add-edit\index.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\layouts\sidebar-nav.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\checkout_flow_type\b2c\one-page-checkout\country_level\main.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\checkout_flow_type\b2c\one-page-checkout\service_level\main.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\one-page-checkout\service_level\review.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\one-page-checkout\variants_level\main.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\checkout_flow_type\b2c\one-page-checkout\shared\pay.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\checkout_flow_type\b2c\one-page-checkout\shared\index.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\checkout_flow_type\b2c\one-page-checkout\shared\details.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\checkout_flow_type\b2c\one-page-checkout\shared\order-total.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\checkout_flow_type\b2c\one-page-checkout\shared\review.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\detail\country_level\table.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\detail\service_level\table.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\detail\shipping_payment_detail.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\detail\table-items.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\detail\table.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\detail\transaction_summary.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\detail\variants_level\table.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\merchant\order_history_detail\country_level\headeritem.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\merchant\order_history_detail\country_level\table-items.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\merchant\order_history_detail\country_level\transaction_summary.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\merchant\order_history_detail\modal-edit-booking.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\merchant\order_history_detail\modal_confirm_cancel.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\merchant\order_history_detail\order-diary\event-form.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\merchant\order_history_detail\order-diary\index-with-border.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\merchant\order_history_detail\order-diary\index.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\merchant\order_history_detail\order-diary\tab-content.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\merchant\order_history_detail\service_level\calendar.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\merchant\order_history_detail\service_level\headeritem.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\merchant\order_history_detail\service_level\shippingaddress.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\merchant\order_history_detail\service_level\table-items.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\merchant\order_history_detail\service_level\transaction_summary.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\merchant\order_history_detail\variants_level\headeritem.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\merchant\order_history_detail\variants_level\table-items.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\merchant\order_history_detail\variants_level\transaction_summary.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\merchant\order_history_list\country_level\bookingheader.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\merchant\order_history_list\country_level\index.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\merchant\order_history_list\service_level\bookingheader.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\merchant\order_history_list\service_level\index.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\merchant\order_history_list\variants_level\bookingheader.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\merchant\order_history_list\variants_level\index.jsx" />
+    <Content Include="src\views\features\pricing_type\country_level\add-edit\add-button.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\pricing_type\country_level\add-edit\location-map.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\pricing_type\country_level\add-edit\location.jsx" />
+    <Content Include="src\views\features\pricing_type\country_level\add-edit\location-list.jsx" />
+    <Content Include="src\views\features\pricing_type\country_level\add-edit\schedule.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\pricing_type\country_level\add-edit\tab-links.jsx" />
+    <Content Include="src\views\features\pricing_type\country_level\add-edit\variant.jsx" />
+    <Content Include="src\views\features\pricing_type\country_level\cart\custom.jsx" />
+    <Content Include="src\views\features\pricing_type\country_level\header\search.jsx" />
+    <Content Include="src\views\features\pricing_type\country_level\home\item-price.jsx" />
+    <Content Include="src\views\features\pricing_type\country_level\item-details\moq.jsx" />
+    <Content Include="src\views\features\pricing_type\country_level\item-details\original-price.jsx" />
+    <Content Include="src\views\features\pricing_type\country_level\user-settings\preferred-location.jsx" />
+    <Content Include="src\views\features\pricing_type\service_level\add-edit\add-button.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\pricing_type\service_level\add-edit\calendar-view.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\pricing_type\service_level\add-edit\index.jsx" />
+    <Content Include="src\views\features\pricing_type\service_level\add-edit\location-map.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\pricing_type\service_level\add-edit\negotiate.jsx" />
+    <Content Include="src\views\features\pricing_type\service_level\add-edit\pricing-stock.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\pricing_type\service_level\add-edit\schedule.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\pricing_type\service_level\add-edit\tab-links.jsx" />
+    <Content Include="src\views\features\pricing_type\service_level\cart\custom.jsx" />
+    <Content Include="src\views\features\pricing_type\service_level\header\search.jsx" />
+    <Content Include="src\views\features\pricing_type\service_level\home\item-price.jsx" />
+    <Content Include="src\views\features\pricing_type\service_level\item-details\calendar.jsx" />
+    <Content Include="src\views\features\pricing_type\service_level\item-details\index.jsx" />
+    <Content Include="src\views\features\pricing_type\service_level\item-details\purchase-order.jsx" />
+    <Content Include="src\views\features\pricing_type\service_level\item-details\seller-info.jsx" />
+    <Content Include="src\views\features\pricing_type\service_level\item-list\index.jsx" />
+    <Content Include="src\views\features\pricing_type\service_level\search\empty-result.jsx" />
+    <Content Include="src\views\features\pricing_type\service_level\search\item-view.jsx" />
+    <Content Include="src\views\features\pricing_type\service_level\search\main.jsx" />
+    <Content Include="src\views\features\pricing_type\service_level\search\map.jsx" />
+    <Content Include="src\views\features\pricing_type\service_level\search\sort-view-options.jsx" />
+    <Content Include="src\views\features\pricing_type\service_level\user-settings\preferred-location.jsx" />
+    <Content Include="src\views\features\pricing_type\variants_level\add-edit\add-button.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\pricing_type\variants_level\add-edit\location-map.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\pricing_type\variants_level\add-edit\schedule.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\pricing_type\variants_level\add-edit\tab-links.jsx" />
+    <Content Include="src\views\features\pricing_type\variants_level\cart\custom.jsx" />
+    <Content Include="src\views\features\pricing_type\variants_level\header\search.jsx" />
+    <Content Include="src\views\features\pricing_type\variants_level\home\item-price.jsx" />
+    <Content Include="src\views\features\pricing_type\variants_level\item-details\moq.jsx" />
+    <Content Include="src\views\features\pricing_type\variants_level\item-details\original-price.jsx" />
+    <Content Include="src\views\features\pricing_type\variants_level\user-settings\preferred-location.jsx" />
+    <Content Include="src\views\item\item-info.jsx" />
+    <Content Include="src\views\item\purchase-order.jsx" />
+    <Content Include="src\views\item\reviews.jsx" />
+    <Content Include="src\views\item\seller-info.jsx" />
+    <Content Include="src\views\layouts\search-category.jsx" />
+    <Content Include="src\views\payment-gateway\cancel\index.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\merchant\shipping_payment_detail.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\order-diary\event-form.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\order-diary\index.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\order-diary\tab-content.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\merchant\order_history_list\index.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\purchase_order_list\country_level\index.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\purchase_order_list\service_level\index.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\purchase_order_list\variants_level\index.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\b2c\purchase_order\purchase_order_list\index.jsx" />
+    <Content Include="src\views\features\checkout_flow_type\modal-success-change.jsx" />
+    <Content Include="src\views\features\pricing_type\country_level\add-edit\index.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\pricing_type\country_level\add-edit\negotiate.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\pricing_type\country_level\add-edit\pricing-modal.jsx" />
+    <Content Include="src\views\features\pricing_type\country_level\add-edit\pricing.jsx" />
+    <Content Include="src\views\features\pricing_type\country_level\item-details\bulk-pricing.jsx" />
+    <Content Include="src\views\features\pricing_type\country_level\item-details\index.jsx" />
+    <Content Include="src\views\features\pricing_type\country_level\item-list\index.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\pricing_type\country_level\search\empty-result.jsx" />
+    <Content Include="src\views\features\pricing_type\country_level\search\item-view.jsx" />
+    <Content Include="src\views\features\pricing_type\country_level\search\main.jsx" />
+    <Content Include="src\views\features\pricing_type\country_level\search\sort-view-options.jsx" />
+    <Content Include="src\views\features\pricing_type\variants_level\add-edit\index.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\pricing_type\variants_level\add-edit\negotiate.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\pricing_type\variants_level\add-edit\pricing-stock.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\pricing_type\variants_level\item-details\index.jsx" />
+    <Content Include="src\views\features\pricing_type\variants_level\item-list\index.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\features\pricing_type\variants_level\search\empty-result.jsx" />
+    <Content Include="src\views\features\pricing_type\variants_level\search\item-view.jsx" />
+    <Content Include="src\views\features\pricing_type\variants_level\search\main.jsx" />
+    <Content Include="src\views\features\pricing_type\variants_level\search\sort-view-options.jsx" />
+    <Content Include="src\views\home\home-page-panels.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\extensions\bespoke\layouts\header-bottom.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\extensions\trillia\chat\item-info.jsx" />
+    <Content Include="src\views\extensions\trillia\chat\offer-actions.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\extensions\trillia\comparison\comparison-detail\breadcrumb.jsx" />
+    <Content Include="src\views\extensions\trillia\comparison\comparison-detail\modal.jsx" />
+    <Content Include="src\views\extensions\trillia\comparison\comparison-detail\detail.jsx" />
+    <Content Include="src\views\extensions\trillia\comparison\comparison-detail\list.jsx" />
+    <Content Include="src\views\extensions\trillia\comparison\comparison-detail\index.jsx" />
+    <Content Include="src\views\extensions\trillia\comparison\comparison-list\modal-add-edit.jsx" />
+    <Content Include="src\views\extensions\trillia\comparison\comparison-widget\modal-add-edit.jsx" />
+    <Content Include="src\views\extensions\trillia\layouts\header-menu.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\extensions\trillia\layouts\user-menu.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\extensions\trillia\login\buyer-login.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\extensions\trillia\login\landing.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\extensions\trillia\login\reset-password.jsx" />
+    <Content Include="src\views\extensions\trillia\login\seller-login.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\extensions\trillia\merchant\item\item-list.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\extensions\trillia\search\item-view.jsx" />
+    <Content Include="src\views\extensions\trillia\search\main.jsx" />
+    <Content Include="src\views\extensions\trillia\search\sort-view-options.jsx" />
+    <Content Include="src\views\home\home-page-panels.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\extensions\trillia\layouts\header-bottom.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\invoice\add-edit\index.jsx" />
+    <Content Include="src\views\invoice\list\filter.jsx" />
+    <Content Include="src\views\invoice\list\index.jsx" />
+    <Content Include="src\views\invoice\list\list-item.jsx" />
+    <Content Include="src\views\invoice\list\list.jsx" />
+    <Content Include="src\views\invoice\list\po-modal.jsx" />
+    <Content Include="src\views\invoice\list\title.jsx" />
+    <Content Include="src\views\invoice\payment\index.jsx" />
+    <Content Include="src\views\invoice\payment\order-summary.jsx" />
+    <Content Include="src\views\invoice\payment\payment-methods.jsx" />
+    <Content Include="src\views\invoice\payment\process-bar.jsx" />
+    <Content Include="src\views\invoice\transaction-complete\credit-card-payment.jsx" />
+    <Content Include="src\views\invoice\transaction-complete\index.jsx" />
+    <Content Include="src\views\invoice\transaction-complete\offline-payment.jsx" />
+    <Content Include="src\views\login\buyer-login.jsx" />
+    <Content Include="src\views\login\buyer-sign-up.jsx" />
+    <Content Include="src\views\login\change-password.jsx" />
+    <Content Include="src\views\login\forgot-password.jsx" />
+    <Content Include="src\views\login\login.jsx" />
+    <Content Include="src\views\login\non-private-login.jsx" />
+    <Content Include="src\views\login\non-private-sign-up.jsx" />
+    <Content Include="src\views\login\register-interest.jsx" />
+    <Content Include="src\views\login\reset-password.jsx" />
+    <Content Include="src\views\login\seller-login.jsx" />
+    <Content Include="src\views\login\seller-sign-up.jsx" />
+    <Content Include="src\views\merchant\item\list\index.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\merchant\layouts\header.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\merchant\layouts\sidebar.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\extensions\trillia\merchant\order\detail\item-detail.jsx" />
+    <Content Include="src\views\extensions\trillia\merchant\order\detail\modal-success-change.jsx" />
+    <Content Include="src\views\extensions\trillia\merchant\order\detail\shipping-detail.jsx" />
+    <Content Include="src\views\extensions\bespoke\search\empty-result.jsx" />
+    <Content Include="src\views\invoice\detail\index.jsx" />
+    <Content Include="src\views\invoice\shared\invoice-detail.jsx" />
+    <Content Include="src\views\invoice\shared\order-detail.jsx" />
+    <Content Include="src\views\invoice\shared\order-items.jsx" />
+    <Content Include="src\views\invoice\shared\order-total.jsx" />
+    <Content Include="src\views\merchant\settings\payment-term.jsx" />
+    <Content Include="src\views\order-diary\index-with-border.jsx" />
+    <Content Include="src\views\order-diary\index.jsx" />
+    <Content Include="src\views\order-diary\event-form.jsx" />
+    <Content Include="src\views\order-diary\tab-content.jsx" />
+    <Content Include="src\views\quotation\quotation-detail\detail.jsx" />
+    <Content Include="src\views\quotation\quotation-detail\index.jsx" />
+    <Content Include="src\views\quotation\quotation-detail\modal.jsx" />
+    <Content Include="src\views\quotation\quotation-detail\price.jsx" />
+    <Content Include="src\views\quotation\quotation-list\list.jsx" />
+    <Content Include="src\views\quotation\quotation-list\filters.jsx" />
+    <Content Include="src\views\quotation\quotation-list\index.jsx" />
+    <Content Include="src\views\receiving-note\create\index.jsx" />
+    <Content Include="src\views\receiving-note\detail\index.jsx" />
+    <Content Include="src\views\receiving-note\shared\order-items.jsx" />
+    <Content Include="src\views\receiving-note\list\filter.jsx" />
+    <Content Include="src\views\receiving-note\list\index.jsx" />
+    <Content Include="src\views\receiving-note\list\items-per-page.jsx" />
+    <Content Include="src\views\receiving-note\list\list.jsx" />
+    <Content Include="src\views\receiving-note\list\modal-create.jsx" />
+    <Content Include="src\views\receiving-note\shared\order-total.jsx" />
+    <Content Include="src\views\requisition\detail\index.jsx" />
+    <Content Include="src\views\requisition\detail\order-detail.jsx" />
+    <Content Include="src\views\requisition\detail\order-items.jsx" />
+    <Content Include="src\views\requisition\detail\order-total.jsx" />
+    <Content Include="src\views\requisition\list\filters.jsx" />
+    <Content Include="src\views\requisition\list\index.jsx" />
+    <Content Include="src\views\requisition\list\list.jsx" />
+    <Content Include="src\views\search\filters.jsx" />
+    <Content Include="src\views\search\index.jsx" />
+    <Content Include="src\views\search\result-header.jsx" />
+    <Content Include="src\views\shared\base.jsx" />
+    <Content Include="src\views\storefront\storefront-google-analytics.jsx" />
+    <Content Include="src\views\sub-account\registration\index.jsx" />
+    <Content Include="src\views\user-group\add-edit\form.jsx" />
+    <Content Include="src\views\user-group\add-edit\index.jsx" />
+    <Content Include="src\views\user-group\add-edit\title.jsx" />
+    <Content Include="src\views\user-group\list\filter.jsx" />
+    <Content Include="src\views\user-group\list\index.jsx" />
+    <Content Include="src\views\user-group\list\list.jsx" />
+    <Content Include="src\views\user-group\list\title.jsx" />
+    <Content Include="src\views\user\custom-fields\checkbox-component.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\user\custom-fields\date-component.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\user\custom-fields\dropdown-component.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\user\custom-fields\hyperlink-component.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\user\custom-fields\image-component.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\user\custom-fields\input-container-component.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\user\custom-fields\pdf-component.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\user\custom-fields\text-component.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\user\settings\image-modal-view.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\user\settings\address-settings-button.jsx" />
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\public\css\bespoke\" />
+    <Folder Include="src\public\images\country_flags\" />
+    <Folder Include="src\public\images\emptypage\" />
+    <Folder Include="src\public\images\gateways\" />
+    <Folder Include="src\public\js\fullcalendar-v5\" />
+    <Folder Include="src\public\js\fullcalendar-v5\locales\" />
+    <Folder Include="src\public\js\static\" />
+    <Folder Include="src\redux\" />
+    <Folder Include="src\public\fonts\" />
+    <Folder Include="src\public\images\" />
+    <Folder Include="src\public\js\" />
+    <Folder Include="src\redux\reducers\" />
+    <Folder Include="src\routes\merchants\" />
+    <Folder Include="src\scripts\account-permission\" />
+    <Folder Include="src\scripts\activity-log\" />
+    <Folder Include="src\scripts\home\" />
+    <Folder Include="src\" />
+    <Folder Include="sdk\" />
+    <Folder Include="src\public\" />
+    <Folder Include="src\public\css\" />
+    <Folder Include="src\scripts\" />
+    <Folder Include="src\routes\" />
+    <Folder Include="sdk\resources\" />
+    <Folder Include="src\scripts\approval\" />
+    <Folder Include="src\scripts\item\" />
+    <Folder Include="src\scripts\login\" />
+    <Folder Include="src\scripts\checkout\" />
+    <Folder Include="src\scripts\comparison\" />
+    <Folder Include="src\scripts\delivery\" />
+    <Folder Include="src\scripts\chat\" />
+    <Folder Include="src\scripts\cart\" />
+    <Folder Include="src\scripts\payment-gateway\" />
+    <Folder Include="src\scripts\receiving-note\" />
+    <Folder Include="src\scripts\invoice\" />
+    <Folder Include="src\scripts\quotation\" />
+    <Folder Include="src\scripts\sub-account\" />
+    <Folder Include="src\scripts\policy\" />
+    <Folder Include="src\scripts\storefront\" />
+    <Folder Include="src\scripts\purchase\" />
+    <Folder Include="src\scripts\merchant\" />
+    <Folder Include="src\scripts\user-group\" />
+    <Folder Include="src\scripts\user\" />
+    <Folder Include="src\scripts\search\" />
+    <Folder Include="src\scripts\shared\" />
+    <Folder Include="src\scripts\requisition\" />
+    <Folder Include="src\views\" />
+    <Folder Include="src\views\account-permission\" />
+    <Folder Include="src\views\account-permission\add-edit\" />
+    <Folder Include="src\views\account-permission\list\" />
+    <Folder Include="src\views\approval\settings\" />
+    <Folder Include="src\views\approval\department\" />
+    <Folder Include="src\views\approval\workflow\" />
+    <Folder Include="src\views\chat\inbox\" />
+    <Folder Include="src\views\chat\quotation\" />
+    <Folder Include="src\views\checkout\delivery\" />
+    <Folder Include="src\views\checkout\payment\" />
+    <Folder Include="src\views\checkout\review\" />
+    <Folder Include="src\views\checkout\transaction-complete\" />
+    <Folder Include="src\views\common\" />
+    <Folder Include="src\views\comparison\" />
+    <Folder Include="src\views\comparison\comparison-detail\" />
+    <Folder Include="src\views\comparison\comparison-list\" />
+    <Folder Include="src\views\comparison\comparison-snapshot\" />
+    <Folder Include="src\views\comparison\comparison-widget\" />
+    <Folder Include="src\views\delivery\add-edit\" />
+    <Folder Include="src\views\delivery\settings\" />
+    <Folder Include="src\views\extensions\bespoke\" />
+    <Folder Include="src\views\extensions\bespoke\checkout\delivery\" />
+    <Folder Include="src\views\extensions\bespoke\checkout\payment\" />
+    <Folder Include="src\views\extensions\bespoke\checkout\review\" />
+    <Folder Include="src\views\extensions\bespoke\checkout\shared\" />
+    <Folder Include="src\views\extensions\bespoke\comparison\comparison-widget\" />
+    <Folder Include="src\views\extensions\bespoke\comparison\comparison-list\" />
+    <Folder Include="src\views\extensions\bespoke\comparison\comparison-detail\" />
+    <Folder Include="src\views\extensions\bespoke\comparison\comparison-snapshot\" />
+    <Folder Include="src\views\extensions\bespoke\layouts\" />
+    <Folder Include="src\views\extensions\bespoke\login\" />
+    <Folder Include="src\views\extensions\bespoke\merchant\" />
+    <Folder Include="src\views\extensions\bespoke\merchant\item\" />
+    <Folder Include="src\views\extensions\bespoke\chat\" />
+    <Folder Include="src\views\extensions\bespoke\item\" />
+    <Folder Include="src\views\extensions\bespoke\comparison\" />
+    <Folder Include="src\views\extensions\bespoke\merchant\item\upload-edit\" />
+    <Folder Include="src\views\extensions\bespoke\merchant\layouts\" />
+    <Folder Include="src\views\extensions\bespoke\checkout\" />
+    <Folder Include="src\views\extensions\bespoke\merchant\order\detail\" />
+    <Folder Include="src\views\extensions\bespoke\merchant\order\" />
+    <Folder Include="src\views\extensions\bespoke\merchant\order\history\" />
+    <Folder Include="src\views\extensions\bespoke\merchant\settings\" />
+    <Folder Include="src\views\extensions\bespoke\policy\" />
+    <Folder Include="src\views\extensions\bespoke\order-diary\" />
+    <Folder Include="src\views\extensions\bespoke\purchase\" />
+    <Folder Include="src\views\extensions\bespoke\purchase\detail\" />
+    <Folder Include="src\views\extensions\bespoke\purchase\history\" />
+    <Folder Include="src\views\extensions\bespoke\search\" />
+    <Folder Include="src\views\extensions\bespoke\storefront\" />
+    <Folder Include="src\views\extensions\bespoke\user\" />
+    <Folder Include="src\views\extensions\bespoke\user\settings\" />
+    <Folder Include="src\views\extensions\trillia\" />
+    <Folder Include="src\views\extensions\trillia\checkout\delivery\" />
+    <Folder Include="src\views\extensions\trillia\checkout\payment\" />
+    <Folder Include="src\views\extensions\trillia\checkout\review\" />
+    <Folder Include="src\views\extensions\trillia\comparison\comparison-widget\" />
+    <Folder Include="src\views\extensions\trillia\comparison\comparison-list\" />
+    <Folder Include="src\views\extensions\trillia\comparison\comparison-detail\" />
+    <Folder Include="src\views\extensions\trillia\comparison\comparison-snapshot\" />
+    <Folder Include="src\views\extensions\trillia\merchant\" />
+    <Folder Include="src\views\extensions\trillia\merchant\item\" />
+    <Folder Include="src\views\extensions\trillia\login\" />
+    <Folder Include="src\views\extensions\trillia\layouts\" />
+    <Folder Include="src\views\extensions\trillia\chat\" />
+    <Folder Include="src\views\extensions\trillia\item\" />
+    <Folder Include="src\views\extensions\trillia\comparison\" />
+    <Folder Include="src\views\extensions\trillia\merchant\item\upload-edit\" />
+    <Folder Include="src\views\extensions\trillia\merchant\layouts\" />
+    <Folder Include="src\views\extensions\trillia\merchant\order\" />
+    <Folder Include="src\views\extensions\trillia\merchant\order\detail\" />
+    <Folder Include="src\views\extensions\trillia\merchant\order\history\" />
+    <Folder Include="src\views\extensions\trillia\merchant\settings\" />
+    <Folder Include="src\views\extensions\trillia\checkout\" />
+    <Folder Include="src\views\extensions\trillia\policy\" />
+    <Folder Include="src\views\extensions\trillia\order-diary\" />
+    <Folder Include="src\views\extensions\trillia\purchase\" />
+    <Folder Include="src\views\extensions\trillia\purchase\detail\" />
+    <Folder Include="src\views\extensions\trillia\purchase\history\" />
+    <Folder Include="src\views\extensions\trillia\search\" />
+    <Folder Include="src\views\extensions\trillia\storefront\" />
+    <Folder Include="src\views\extensions\trillia\user\" />
+    <Folder Include="src\views\extensions\trillia\user\settings\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2b\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2b\invoice\add-edit\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2b\layouts\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2b\checkout-button\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2b\checkout-button\multiple_merchant" />
+    <Folder Include="src\views\features\checkout_flow_type\b2b\checkout-button\single_merchant" />
+    <Folder Include="src\views\features\checkout_flow_type\b2b\invoice\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2b\purchase_order\detail\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2b\purchase_order\merchant\order_history_detail\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2b\purchase_order\merchant\order_history_detail\country_level\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2b\purchase_order\merchant\order_history_detail\service_level\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2b\purchase_order\merchant\order_history_detail\order-diary\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2b\purchase_order\merchant\order_history_detail\variants_level\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\checkout-button\single_merchant\country_level\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\checkout-button\single_merchant\service_level\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\checkout-button\single_merchant\variants_level\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\invoice\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\invoice\add-edit\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\one-page-checkout\service_level\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\purchase_order\detail\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\purchase_order\detail\country_level\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\purchase_order\detail\service_level\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\purchase_order\detail\variants_level\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\purchase_order\merchant\order_history_detail\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\purchase_order\merchant\order_history_detail\country_level\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\purchase_order\merchant\order_history_detail\order-diary\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\purchase_order\merchant\order_history_detail\variants_level\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\purchase_order\merchant\order_history_detail\service_level\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\purchase_order\merchant\order_history_list\country_level\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\purchase_order\merchant\order_history_list\variants_level\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\purchase_order\merchant\order_history_list\service_level\" />
+    <Folder Include="src\views\features\pricing_type\country_level\cart\" />
+    <Folder Include="src\views\features\pricing_type\country_level\home\" />
+    <Folder Include="src\views\features\pricing_type\country_level\header\" />
+    <Folder Include="src\views\features\pricing_type\country_level\user-settings\" />
+    <Folder Include="src\views\features\pricing_type\service_level\" />
+    <Folder Include="src\views\features\pricing_type\service_level\add-edit\" />
+    <Folder Include="src\views\features\pricing_type\service_level\cart\" />
+    <Folder Include="src\views\features\pricing_type\service_level\item-details\" />
+    <Folder Include="src\views\features\pricing_type\service_level\item-list\" />
+    <Folder Include="src\views\features\pricing_type\service_level\home\" />
+    <Folder Include="src\views\features\pricing_type\service_level\header\" />
+    <Folder Include="src\views\features\pricing_type\service_level\search\" />
+    <Folder Include="src\views\features\pricing_type\service_level\user-settings\" />
+    <Folder Include="src\views\features\pricing_type\variants_level\cart\" />
+    <Folder Include="src\views\features\pricing_type\variants_level\home\" />
+    <Folder Include="src\views\features\pricing_type\variants_level\header\" />
+    <Folder Include="src\views\features\pricing_type\variants_level\user-settings\" />
+    <Folder Include="src\views\payment-gateway\" />
+    <Folder Include="src\views\payment-gateway\cancel\" />
+    <Folder Include="src\views\features\pricing_type\country_level\search\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2b\purchase_order\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2b\checkout-complete\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2b\one-page-checkout\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2b\one-page-checkout\country_level\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2b\one-page-checkout\shared\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2b\one-page-checkout\variants_level\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2b\purchase_order\merchant\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2b\purchase_order\order-diary\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2b\purchase_order\merchant\order_history_list\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2b\purchase_order\purchase_order_list\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\checkout-complete\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\layouts\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\checkout-button\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\checkout-button\multiple_merchant" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\checkout-button\single_merchant" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\purchase_order\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\one-page-checkout\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\one-page-checkout\country_level\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\one-page-checkout\shared\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\one-page-checkout\variants_level\" />
+    <Folder Include="src\views\features\checkout_flow_type\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\purchase_order\merchant\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\purchase_order\order-diary\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\purchase_order\merchant\order_history_list\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\purchase_order\purchase_order_list\" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\purchase_order\purchase_order_list\country_level" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\purchase_order\purchase_order_list\service_level" />
+    <Folder Include="src\views\features\checkout_flow_type\b2c\purchase_order\purchase_order_list\variants_level" />
+    <Folder Include="src\views\features\pricing_type\" />
+    <Folder Include="src\views\features\pricing_type\country_level\" />
+    <Folder Include="src\views\features\pricing_type\country_level\add-edit\" />
+    <Folder Include="src\views\features\pricing_type\country_level\item-details\" />
+    <Folder Include="src\views\features\pricing_type\country_level\item-list\" />
+    <Folder Include="src\views\features\pricing_type\variants_level\" />
+    <Folder Include="src\views\features\pricing_type\variants_level\add-edit\" />
+    <Folder Include="src\views\features\pricing_type\variants_level\item-details\" />
+    <Folder Include="src\views\features\pricing_type\variants_level\item-list\" />
+    <Folder Include="src\views\features\pricing_type\variants_level\search\" />
+    <Folder Include="src\views\invoice\" />
+    <Folder Include="src\views\invoice\add-edit\" />
+    <Folder Include="src\views\invoice\detail" />
+    <Folder Include="src\views\invoice\list\" />
+    <Folder Include="src\views\invoice\payment\" />
+    <Folder Include="src\views\invoice\shared" />
+    <Folder Include="src\views\invoice\transaction-complete\" />
+    <Folder Include="src\views\layouts\" />
+    <Folder Include="src\views\home\" />
+    <Folder Include="src\views\item\" />
+    <Folder Include="src\views\login\" />
+    <Folder Include="src\scripts\inbox\" />
+    <Folder Include="src\views\merchant\" />
+    <Folder Include="src\views\merchant\item\" />
+    <Folder Include="src\views\merchant\item\list\" />
+    <Folder Include="src\views\merchant\layouts\" />
+    <Folder Include="src\views\extensions\" />
+    <Folder Include="src\views\checkout\" />
+    <Folder Include="src\views\activity-log\" />
+    <Folder Include="src\views\approval\" />
+    <Folder Include="src\views\chat\" />
+    <Folder Include="src\views\delivery\" />
+    <Folder Include="src\views\merchant\dashboard\" />
+    <Folder Include="src\views\merchant\item\upload-edit\" />
+    <Folder Include="src\views\merchant\order\" />
+    <Folder Include="src\views\merchant\order\history\" />
+    <Folder Include="src\views\merchant\order\detail\" />
+    <Folder Include="src\views\cart\" />
+    <Folder Include="src\views\features\" />
+    <Folder Include="src\views\receiving-note\" />
+    <Folder Include="src\views\quotation\" />
+    <Folder Include="src\views\quotation\quotation-detail\" />
+    <Folder Include="src\views\quotation\quotation-list\" />
+    <Folder Include="src\views\order-diary\" />
+    <Folder Include="src\views\policy\" />
+    <Folder Include="src\views\receiving-note\create\" />
+    <Folder Include="src\views\receiving-note\detail\" />
+    <Folder Include="src\views\receiving-note\list\" />
+    <Folder Include="src\views\receiving-note\shared\" />
+    <Folder Include="src\views\requisition\detail" />
+    <Folder Include="src\views\requisition\" />
+    <Folder Include="src\views\requisition\list\" />
+    <Folder Include="src\views\sub-account\" />
+    <Folder Include="src\views\sub-account\list\" />
+    <Folder Include="src\views\shared\" />
+    <Folder Include="src\views\storefront\" />
+    <Folder Include="src\views\purchase\" />
+    <Folder Include="src\views\purchase\history\" />
+    <Folder Include="src\views\purchase\detail\" />
+    <Folder Include="src\views\merchant\settings\" />
+    <Folder Include="src\views\search\" />
+    <Folder Include="src\views\sub-account\registration\" />
+    <Folder Include="src\views\user-group\" />
+    <Folder Include="src\views\user-group\add-edit\" />
+    <Folder Include="src\views\user-group\list\" />
+    <Folder Include="src\views\user\" />
+    <Folder Include="src\views\user\custom-fields\" />
+    <Folder Include="src\views\user\settings\" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
